@@ -200,3 +200,10 @@ https://zhuanlan.zhihu.com/p/32903540
 
 https://zhuanlan.zhihu.com/p/32903540 （LR ftrl）
 
+http://blog.leanote.com/post/ryan_fan/FTRL
+
+https://plushunter.github.io/2017/07/26/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E7%B3%BB%E5%88%97%EF%BC%8831%EF%BC%89%EF%BC%9A%E5%9C%A8%E7%BA%BF%E6%9C%80%E4%BC%98%E5%8C%96%E6%B1%82%E8%A7%A3%EF%BC%88online%20Optimization%EF%BC%89/
+
+https://www.cnblogs.com/EE-NovRain/p/3810737.html
+
+https://zhuanlan.zhihu.com/p/20447450
