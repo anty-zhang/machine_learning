@@ -1,4 +1,3 @@
-
 [TOC]
 
 # 总述
@@ -7,7 +6,7 @@
 
 > LR + 多项式：特征组合，不适用于特征稀疏场景，泛化能力比较弱 
 
-> FM： 适用于特征稀疏场景，繁华能力比较强
+> FM： 适用于特征稀疏场景，泛化能力比较强
 
 > FFM：省去零值特征，提升FFM模型训练和预测速度，这也是稀疏样本采用FFM的显著优势
 
@@ -70,15 +69,16 @@ $J(w) = - \frac {1} {m} log(l(w)) = \frac {1} {m} \sum_{i=0}^m L(y, \hat y)$
 4. 如果根据似然函数直接计算，有两个缺点： （1）不利于后续求导  （2）似函数的计算会导致数据溢出
 5. 除以m得到平均损失值，避免样本量对损失值的影响
 
-
 ### 逻辑回归为什么使用sigmoid
 
 https://blog.csdn.net/u013385925/article/details/79666953
 
 # 广义线性模型
+
 https://www.jianshu.com/p/c99e7a2cf151 （逻辑回归（LR） 广义线性模型）
 
 # LR如何解决线性不可分问题
+
 https://www.jianshu.com/p/dce9f1af7bc9
 
 ## 利用核函数，对特征进行变换
@@ -122,7 +122,6 @@ $z = \sum_{i=1}^m w_ix_i + \sum_{i=1}^{m-1} \sum_{j=i+1}^m w_{ij}x_ix_j + b$
 
 李沐曾经说过：模型是使用离散特征还是连续特征，其实是一个“海量离散特征+简单模型” 同 “少量连续特征+复杂模型”的权衡。既可以离散化用线性模型，也可以用连续特征加深度学习。就看是喜欢折腾特征还是折腾模型了。通常来说，前者容易，而且可以n个人一起并行做，有成功经验；后者目前看很赞，能走多远还须拭目以待
 
-
 > 离散特征的增加和减少都很容易，易于模型的快速迭代；
 
 > 稀疏向量内积乘法运算速度快，计算结果方便存储，容易扩展；
@@ -148,10 +147,12 @@ $z = \sum_{i=1}^m w_ix_i + \sum_{i=1}^{m-1} \sum_{j=i+1}^m w_{ij}x_ix_j + b$
 非参数模型对样本总体不做任何假设，只是知道总体是一个随机变量，其分布是存在的(分布中也有可能存在参数)， 但无法知道分布的形式，更不知道分布的相关参数，只是在给定的一些样本条件下，能够依据非参数统计的方法进行推断
 
 ## LR和SVM联系
+
 1. 都可以处理分类问题(在改进的情况下可以处理多分类问题)
 2. 都可以增加不同的正则项，如L1,L2，在很多式样中，两种算法的结果很接近
 
 ## LR和SVM区别
+
 1. 模型类别：LR属于参数模型[LR假设样本服从Bernoulli分布], SVM属于非参数模型
 2. 目标函数：LR采用Logistical Loss， SVM采用Hinge loss。两个损失函数的目的都是增加对分类影响较大的数据点的权重，减少与分类无关的数据点的权重
 3. 数据敏感度：LR对异常点敏感；SVM对异常点不敏感，值关心支持向量，且需要先做归一化
@@ -160,94 +161,10 @@ $z = \sum_{i=1}^m w_ix_i + \sum_{i=1}^{m-1} \sum_{j=i+1}^m w_{ij}x_ix_j + b$
 6. LR能做的SVM能做，SVM能做的LR做不了
 
 ## LR和SVM如何选择？
+
 1. 如果Feature的数量很大，跟样本数量差不多，这时候选用LR或者是Linear Kernel的SVM
 2. 如果Feature的数量比较小，样本数量一般，不算大也不算小，选用SVM+Gaussian Kernel
 3. 如果Feature的数量比较小，而样本数量很多，需要手工添加一些feature变成第一种情况。
-
-
-# FM(Factorization Machine) 模型
-
-FM模型是一种基于矩阵分解的机器学习模型，对于稀疏数据具有很好的学习能力，解决了LR泛化能力弱的问题。
-
-## FM 主要目标
-
-解决数据稀疏的情况下，特征怎样组合的问题
-
-## FM优点
-
-1. 可以再非常稀疏的数据中进行合理的参数估计
-2. FM模型的时间复杂度是线性的
-3. FM是一个通用的模型，它可以用于任何特征为实值的情况
-
-## FM算法原理
-
-### one-hot导致稀疏性
-
-### FM求解
-在一般线性模型中，各个特征是独立考虑的，没有考虑特征与特征之间的相互关系。即一般的线性模型表达式为
-
-$y = w_0 + \sum_{i=1}^n w_ix_i$
-
-但实际中，大量的特征之间是有关联的，为了表述特征之间的相关性，我们采用多项式模型。在多项式模型中，特征 $x_i$ 与 $x_j$ 的组合用 $x_ix_j$表示。简单起见，我们只讨论二阶多项式
-
-$y = w_0 + \sum_{i=1}^n w_i x_i + \sum_{i=1}^{n-1} \sum_{j=i+1}^n w_{ij} x_i x_j$
-
-该多项式模型与线性模型相比，多了特征组合的部分，特征组合部分的参数有 $C_n^2 = \frac{n(n-1)}{2}$ 复杂度为 $n^2$。如果特征非常稀疏且维度很高的话，时间复杂度大大增加。
-
-为了求出 $w_{ij}$，我们对每一个特征分量$x_i$ 引入辅助向量 $v_i = (v_{i1}, v_{i2}, ..., v_{ik} $ ，然后利用 $v_i v_j^T 对w_{ij}$ 进行求解
-
-<font color='red'> 时间复杂度将为 O(kn) </font>
-
-![](./img/fm-1.jpg)
-
-![](./img/fm-2.jpg)
-
-![](./img/fm-3.jpg)
-
-具体过程如下
-
-$ \sum_{i=1}^{n-1} \sum _{j=i+1}^n <v_i, v_j> x_i x_j$
-
-$= 1/2 (\sum_{i=1}^{n} \sum_{j=1}^n <v_i, v_j> x_i x_j - \sum_{i=1}^n <v_i, v_j> x_i x_i )$
-
-$= 1/2 (\sum_{i=1}^n \sum_{j=1}^n \sum_{f=1}^k v_{i,f} v_{j,f} x_i x_j - \sum_{i=1}^n \sum_{f=1}^i v_{i,f} v_{i,f} x_i x_i )$
-
-$= 1/2 \sum_{f=1}^k ((\sum_{i=1}^n v_{i,f} x_i) (\sum_{j=1}^n v_{j,f} x_j) - \sum_{i=1} v_{i,f}^2 x_i^2 )$
-
-$= 1/2 \sum_{f=1}^k ( (\sum_{i=1}^n v_{i,f} x_i)^2 - \sum_{i=1} v_{i,f}^2 x_i^2 ) $
-
-### FM 代码实战
-
-https://github.com/Johnson0722/CTR_Prediction/tree/master
-https://github.com/babakx/fm_tensorflow/blob/master/fm_tensorflow.ipynb
-https://github.com/princewen/tensorflow_practice/tree/master/recommendation-FM-demo
-
-## 比较FM 和MF
-
-1. FM 可以更方便的加入特征，而MF 加入特征非常复杂
-2. 在实际大规模数据场景下，在排序阶段，绝大多数只使用ID信息的模型是不实用的，没有引入Side Information(即除了User ID/Item ID 外很多其他有用的特征)，是不具备实战价值的。原因很简单，大多数真实应用场景中，User/Item有很多信息可用，而协同数据只是其中的一种，引入更多特征明显对于更精准地进行个性化推荐是非常有帮助的。而如果模型不支持更多特征的便捷引入，明显受限严重，很难真正实用，这也是为何矩阵分解类的方法很少看到在Ranking阶段使用，通常是作为一路召回形式存在的原因。
-
-## reference
-
-[美团-深入FFM原理与实践](https://tech.meituan.com/2016/03/03/deep-understanding-of-ffm-principles-and-practices.html)
-
-[FM 论文](https://www.csie.ntu.edu.tw/~b97053/paper/Rendle2010FM.pdf)
-
-[CTR预估算法之FM, FFM, DeepFM及实践](https://blog.csdn.net/John_xyz/article/details/78933253)
-
-[CTR预估算法之FM, FFM, DeepFM及实践](https://blog.csdn.net/John_xyz/article/details/78933253)
-
-[推荐系统遇上深度学习(一)--FM模型理论和实践](https://mp.weixin.qq.com/s?__biz=MzI1MzY0MzE4Mg==&mid=2247483878&idx=1&sn=0a94aff9156bf2902096c77ca2122372&chksm=e9d01127dea79831de1d1d126549cba1996994c210d0be2ae0004b718fd348909b425fe15fe2&scene=21#wechat_redirect)
-
-[推荐系统遇上深度学习(二)--FFM模型理论和实践](https://cloud.tencent.com/developer/article/1096536)
-
-[FM算法及FFM算法((1, -1) logistic loss解释)](https://www.cnblogs.com/ljygoodgoodstudydaydayup/p/6340129.html)
-
-[FFM 论文](https://www.csie.ntu.edu.tw/~cjlin/papers/ffm.pdf)
-
-[推荐系统召回四模型之：全能的FM模型](https://zhuanlan.zhihu.com/p/58160982)
-
-[libffm](https://github.com/guestwalk/libffm)
 
 # FFM
 
@@ -264,7 +181,6 @@ $y(x) = w_0 + \sum_{i=1}^n w_i x_i + \sum_{i=1}^{n-1} \sum_{j=i+1}^n <v_{i,f_j},
 
 其中， $f_j$是第j个特征的所属的filed。如果隐向量的长度为k，那么FFM的二次参数有 nfk个，远多于FM模型的nk个。
 此外，由于隐向量与field相关，FFM二次项并不能够化简，其预测复杂度为 O(kn^2)
-
 
 下面以一个例子简单说明FFM的特征组合方式[9]。输入记录如下
 
@@ -317,6 +233,7 @@ https://github.com/princewen/tensorflow_practice/tree/master/recommendation-FFM-
 2. 大量重要的特征组合隐藏在数据中，无法被专家识别或者设计。
 
 ### 广度模型
+
 针对人工特征工程存在的两个问题，广度模型和深度模型都提出了不同的解决思路。其中广度模型包括FM/FFM等大规模低秩(Low-Rank)模型, FM/FFM 通过对特征的低秩展开，为每个特征构造隐士向量，并通过隐士向量的点乘结果来建模两个特征的组合关系，从而实现对二阶特组合的自动学习。
 
 FM/FFM相对于Poly-2优势有如下两点：
@@ -327,6 +244,7 @@ FM/FFM相对于Poly-2优势有如下两点：
 总之，FM/FFM是一种有效地对二阶特征组合进行自动学习的模型
 
 ### 深度模型
+
 通过神经网络结构和非线性激活函数，自动学习特征之间复杂的组合关系。目前在APP推荐领域中比较流行的深度模型有FNN/PNN/Wide and Deep。
 
 FNN模型：用FM模型来对Embedding层进行初始化的全连接神经网络。
@@ -385,14 +303,16 @@ embedding layer有两个有趣的特性：
 - 输入数据的每个字段的特征经过embedding之后，都为k维(lantent vector的维度),所以embedding后的特征维度是 字段数×k
 - 在FM里得到的隐变量V现在作为了嵌入层网络的权重,FM模型作为整个模型的一部分与其他深度学习模型一起参与整体的学习, 实现端到端的训练。
 
-
 ## reference
+
 [DeepFM 论文](https://arxiv.org/pdf/1703.04247.pdf)
 
 [CTR预估算法之FM, FFM, DeepFM及实践](https://blog.csdn.net/John_xyz/article/details/78933253)
 
+[美团-深入FFM原理与实践](https://tech.meituan.com/2016/03/03/deep-understanding-of-ffm-principles-and-practices.html)
 
+[推荐系统遇上深度学习(二)--FFM模型理论和实践](https://cloud.tencent.com/developer/article/1096536)
 
+[FFM 论文](https://www.csie.ntu.edu.tw/~cjlin/papers/ffm.pdf)
 
-
-
+[libffm](https://github.com/guestwalk/libffm)
