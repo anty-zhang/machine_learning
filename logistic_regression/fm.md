@@ -72,11 +72,12 @@ $\begin{array}{l}
 L(y,\widehat y) = \sum\limits_{i = 1}^m { - \log \sigma ({y^{(i)}}{{\widehat y}^{(i)}})} \\
 \frac{{\partial L(y,\widehat y)}}{{\partial \theta }} =  - \frac{1}{{\sigma (y\widehat y)}}\sigma (y\widehat y)(1 - \sigma (y\widehat y))y\frac{{\partial \widehat y}}{{\partial \theta }}\\
  = (\sigma (y\widehat y) - 1)y\frac{{\partial \widehat y}}{{\partial \theta }}\\
+\\
 \frac{{\partial \widehat y}}{{\partial \theta }} = \left\{ \begin{array}{l}
 1 & if \quad \theta  = {w_0}\\
 {x_i} & if \quad \theta  = {w_i}\\
-{x_i}\sum\limits_{j = 1}^n {{v_{j,f}}{x_j} - {v_{i,f}}x_i^2}  & if \quad \theta  = {v_{i,f}}
-\end{array} \right.
+{x_i}\sum\limits_{j = 1}^n {{v_{j,f}}{x_j} - {v_{i,f}} x_i^2}  & if \quad \theta  = {v_{i,f}} \\
+\end{array} \right. \\
 \end{array}$
 
 - 参数更新逻辑
