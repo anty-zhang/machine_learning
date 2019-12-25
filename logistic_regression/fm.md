@@ -1,3 +1,5 @@
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
 [TOC]
 
 # FM(Factorization Machine) 模型
@@ -71,7 +73,7 @@ $\begin{array}{l}
  = {w_0} + \sum\limits_{i = 1}^n {{w_i}{x_i} + } 1/2\sum\limits_{f = 1}^k {((} \sum\limits_{i = 1}^n {{v_{i,f}}} {x_i}{)^2} - \sum\limits_{i = 1} {v_{i,f}^2} x_i^2)\\
 L(y,\widehat y) = \sum\limits_{i = 1}^m { - \log \sigma ({y^{(i)}}{{\widehat y}^{(i)}})} \\
 \frac{{\partial L(y,\widehat y)}}{{\partial \theta }} =  - \frac{1}{{\sigma (y\widehat y)}}\sigma (y\widehat y)(1 - \sigma (y\widehat y))y\frac{{\partial \widehat y}}{{\partial \theta }}\\
- = (\sigma (y\widehat y) - 1)y\frac{{\partial \widehat y}}{{\partial \theta }}\\
+ = (\sigma (y\widehat y) - 1)y\frac{{\partial \widehat y}}{{\partial \theta }}
 \end{array}$
 
 $\begin{array}{l}
