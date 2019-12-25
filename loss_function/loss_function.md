@@ -28,7 +28,7 @@ $p(y|x) = \left\{ \begin{array}{l}
 1 - \widehat y & if \quad y = 0
 \end{array} \right.$
 
-$ \begin{array}{l}L(y,\widehat y) =  - y\log (\widehat y) - (1 - y)\log (1 - \widehat y)\\
+$\begin{array}{l}L(y,\widehat y) =  - y\log (\widehat y) - (1 - y)\log (1 - \widehat y)\\
 \frac{{\partial L(y,\widehat y)}}{{\partial {\theta _j}}} = \frac{{L(y,\widehat y)}}{{\partial \widehat y}}\frac{{\widehat {\partial y}}}{{\partial z}}\frac{{\partial z}}{{{\theta _j}}}\\
  = ( - \frac{y}{{\widehat y}} + \frac{{1 - y}}{{1 - \widehat y}})\widehat y(1 - \widehat y){x_j}\\
  = (\widehat y - y){x_j}
