@@ -89,3 +89,7 @@ $H(p, q) = - \sum_{i=1}^{n}p(x_i) log(q(x_i))$
 从香农熵到手推KL散度：纵览机器学习中的信息论 
 
 熵：宇宙的终极规则 
+
+https://zhuanlan.zhihu.com/p/26486223 (TODO)
+
+https://www.zhihu.com/question/22104055 (TODO)

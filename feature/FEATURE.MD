@@ -88,3 +88,4 @@ eg: age特征取值0-200，设置minThresh=10，maxThresh=80，那么在0-80之�
 !["box plot"](./img/box_plot.png)
 
 https://zhuanlan.zhihu.com/p/33473642
+
