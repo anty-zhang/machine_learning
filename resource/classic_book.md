@@ -38,10 +38,15 @@ http://product.dangdang.com/8804277.html
 其中一个作者Friedman是我们的老师，本来希望上课的时候老师能把书里的东西讲的清清楚楚，结果他讲课超级无聊，很多人都逃课了。按他自己的话说“上个quarter的statistical learning 我有次差点对着空教室讲课”。
 牢骚发完了，说下读这本书要注意什么。好几个统计的和计算数学的博士都说这本书其实就是几个作者的工作和他们所玩领域的一个概览，初学者只读这本书肯定是搞不明白的，所以一定要读他们里面引用的paper啊！另外这些家伙假设读者已经知道hypothesis space searching 等等这种基本概念，neural network 也是讲的不太详细。所以另外的参考书就很重要了，像 machine learning, by Tom Mitchell, 就是给初学者写的好书。最后如果要编程的话，这本书里面没有code也没有online code，所以可以移步去读programming collective intelligence，里面的code 是python，至于R，可以google “data mining with r”，找本靠谱的书作参考。
 这本书还是起了一个鸟瞰全局的作用的，当然鸟瞰的了不，还是要凭个人的努力和功力的。
-
-
-
 ```
+
+# 信息论：基础理论与应用（第4版）Information Theory Principles and Applications The Fourth Edition
+
+作者：傅祖芸 著
+
+![](./img/xinxilun.jpg)
+
+https://item.jd.com/11658941.html
 
 # Machine Learning Kevin P·Murphy
 

@@ -4,7 +4,7 @@
 
 > 线性模型LR: 没有考虑到特征之间关联
 
-> LR + 多项式：特征组合，不适用于特征稀疏场景，泛化能力比较弱 
+> LR + 多项式：特征组合，不适用于特征稀疏场景，泛化能力比较弱
 
 > FM： 适用于特征稀疏场景，泛化能力比较强
 
@@ -18,7 +18,7 @@ LR是一种监督学习的分类算法，实现了给定数据集到0，1的映�
 
 数据集合： $D = {(x_1, y_1), (x_2, y_2), ..., (x_n, y_n)}$ 
 
-$\hat y = \sigma(z) $
+$\hat y = \sigma(z)$
 
 $\sigma(z) = \frac {1} {1 + e^{-z}}$
 
@@ -73,7 +73,7 @@ $J(w) = - \frac {1} {m} log(l(w)) = \frac {1} {m} \sum_{i=0}^m L(y, \hat y)$
 
 https://blog.csdn.net/u013385925/article/details/79666953
 
-# 广义线性模型
+# 广义线性模型 (TODO)
 
 https://www.jianshu.com/p/c99e7a2cf151 （逻辑回归（LR） 广义线性模型）
 
@@ -177,7 +177,7 @@ $v_{i,f_j}$。因此，隐向量不仅与特征相关，也与field相关。也�
 
 假设样本的n个特征属于 f 个field，那么FFM的二次项有 nf 个隐向量。而在FM模型中，每一维特征的隐向量只有一个，因此FM可以看作FFM的特例，是把所有特征都归于一个field时的FFM模型。根据FFM的field敏感特性，可以导出模型方程为：
 
-$y(x) = w_0 + \sum_{i=1}^n w_i x_i + \sum_{i=1}^{n-1} \sum_{j=i+1}^n <v_{i,f_j}, v_{j,f_i}> x_i x_j $
+$y(x) = w_0 + \sum_{i=1}^n w_i x_i + \sum_{i=1}^{n-1} \sum_{j=i+1}^n <v_{i,f_j}, v_{j,f_i}> x_i x_j$
 
 其中， $f_j$是第j个特征的所属的filed。如果隐向量的长度为k，那么FFM的二次参数有 nfk个，远多于FM模型的nk个。
 此外，由于隐向量与field相关，FFM二次项并不能够化简，其预测复杂度为 O(kn^2)
@@ -194,13 +194,13 @@ $y(x) = w_0 + \sum_{i=1}^n w_i x_i + \sum_{i=1}^{n-1} \sum_{j=i+1}^n <v_{i,f_j},
 
 ![](./img/ffm-3.jpg)
 
-其中，红色是field编号，蓝色是特征编号，绿色是此样本的特征取值。二次项的系数是通过与特征field相关的隐向量点积得到的，二次项共有 $/frac {n(n−1)}{2}$ 个。
+其中，红色是field编号，蓝色是特征编号，绿色是此样本的特征取值。二次项的系数是通过与特征field相关的隐向量点积得到的，二次项共有 $\frac {n(n−1)}{2}$ 个。
 
 ## FFM损失函数
 
 这里讲得只是一种FFM的实现方式，并不是唯一的。FFM将问题定义为分类问题，使用的是logistic loss，同时加入了正则项
 
-$min_w \sum_{i=1}^L log(1 + exp{-y_i \phi(w, x_i)}) + \lambda / 2 ||w||^2 $
+$min_w \sum_{i=1}^L log(1 + exp{-y_i \phi(w, x_i)}) + \lambda / 2 ||w||^2$
 
 where $y_i \in {-1, 1}$
 
