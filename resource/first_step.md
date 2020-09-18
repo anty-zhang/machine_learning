@@ -61,3 +61,6 @@ Kaggle：机器学习竞赛。可以积累很多有用的经验。大多数时�
 > http://archive.ics.uci.edu/ml/index.php (加州大学欧文分校（UCI）的机器学习知识库)
 
 
+# Google developers
+
+[Google developers](https://developers.google.com/machine-learning/crash-course/embeddings/video-lecture)
