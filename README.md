@@ -13,3 +13,8 @@
 
 
 模式识别: 重在认识事物。
+
+
+# 竞赛
+
+[阿里云-天池大赛](https://tianchi.aliyun.com/competition/gameList/algorithmList)
