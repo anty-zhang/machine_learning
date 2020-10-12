@@ -10,3 +10,8 @@
 
 [Probability 国立台湾大学教授](https://www.coursera.org/learn/prob1?action=enroll)
 
+# 机器学习
+
+[機器學習基石上 (Machine Learning Foundations)---Mathematical Foundations](https://www.coursera.org/learn/ntumlone-mathematicalfoundations?source=deprecated_spark_cdp)
+
+[機器學習基石下 (Machine Learning Foundations)---Algorithmic Foundations](https://www.coursera.org/learn/ntumlone-algorithmicfoundations?source=deprecated_spark_cdp)

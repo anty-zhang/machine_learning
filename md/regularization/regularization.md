@@ -55,6 +55,3 @@ overfitting两种情况
 
 ### example2
 
-
-# 建设模型是线性回归，不小心多增加了一列重复特征，使用L1和L2优化有什么不同？
-> https://stats.stackexchange.com/questions/241471/if-multi-collinearity-is-high-would-lasso-coefficients-shrink-to-0
