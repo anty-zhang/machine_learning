@@ -207,3 +207,18 @@ https://plushunter.github.io/2017/07/26/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%
 https://www.cnblogs.com/EE-NovRain/p/3810737.html
 
 https://zhuanlan.zhihu.com/p/20447450
+
+
+
+todo
+
+https://blog.csdn.net/google19890102/article/details/47422821
+https://web.stanford.edu/~jduchi/projects/DuchiSi09b.pdf
+https://www.zhihu.com/question/55468616
+https://nihil.top/2018/08/10/fobos-rda%E5%92%8Cftrl%E7%AE%97%E6%B3%95%E7%9A%84%E7%90%86%E8%A7%A3%E4%B8%8E%E5%AF%B9%E6%AF%94/
+https://zhuanlan.zhihu.com/p/20607684
+https://www.cnblogs.com/yifdu25/p/8303462.html
+https://baijiahao.baidu.com/s?id=1564395461950267&wfr=spider&for=pc
+https://yq.aliyun.com/articles/227869
+https://www.jianshu.com/p/24af3fc40b1a
+https://www.sohu.com/a/199950593_473283
