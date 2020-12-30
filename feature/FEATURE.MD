@@ -1,4 +1,11 @@
 
+[TOC]
+
+# 精通特征工程一书思维导图
+
+![](./img/Feature_Engineering_for_Machine_Learning.jpeg)
+
+
 
 
 # reference
@@ -89,3 +96,10 @@ eg: age特征取值0-200，设置minThresh=10，maxThresh=80，那么在0-80之�
 
 https://zhuanlan.zhihu.com/p/33473642
 
+
+
+# reference
+
+[面向机器学习的特征工程-中文版在线阅读](https://github.com/apachecn/fe4ml-zh)
+
+[精通特征工程思维导图](https://github.com/cjn-chen/machine_learn_reading_notes/blob/master/Feature_Engineering_for_Machine_Learning/Feature_Engineering_for_Machine_Learning.jpeg)

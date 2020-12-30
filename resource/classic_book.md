@@ -557,7 +557,9 @@ http://product.dangdang.com/1499371447.html
 
 > https://book.douban.com/subject/4818683/
 
+# 免费下载资源
 
+[ml-road](https://github.com/yanshengjia/ml-road)
 
 # bayesian 相关书籍
 

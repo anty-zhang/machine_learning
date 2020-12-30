@@ -52,7 +52,7 @@ $= 1/2 (\sum_{i=1}^n \sum_{j=1}^n \sum_{f=1}^k v_{i,f} v_{j,f} x_i x_j - \sum_{i
 
 $= 1/2 \sum_{f=1}^k ((\sum_{i=1}^n v_{i,f} x_i) (\sum_{j=1}^n v_{j,f} x_j) - \sum_{i=1} v_{i,f}^2 x_i^2 )$
 
-$= 1/2 \sum_{f=1}^k ( (\sum_{i=1}^n v_{i,f} x_i)^2 - \sum_{i=1} v_{i,f}^2 x_i^2 ) $
+$= 1/2 \sum_{f=1}^k ( (\sum_{i=1}^n v_{i,f} x_i)^2 - \sum_{i=1} v_{i,f}^2 x_i^2 )$
 
 ### 基于随机梯度优化
 
