@@ -1,8 +1,8 @@
 
 [TOC]
 
-
 # python 学习
+
 [python数据分析与机器学习实战(liuyang)](https://www.youtube.com/watch?v=eS5Y4_me3dI&list=PLhXu26RzZZTwus4cNbPTcgXXH6oavT6EB&index=51)
 
 [python 部落](https://python.freelycode.com/contribution/list/6)
@@ -18,6 +18,20 @@
 [機器學習基石下 (Machine Learning Foundations)---Algorithmic Foundations](https://www.coursera.org/learn/ntumlone-algorithmicfoundations?source=deprecated_spark_cdp)
 
 [机器学习部分书籍推荐](https://blog.csdn.net/xiangxizhishi/article/details/78875727)
+
+[2019年5个最棒的机器学习课程(TODO)](https://github.com/catboost/tutorials)
+
+[2019年Reddit机器学习板块17个最佳项目：最新代码、资源应有尽有](https://www.qbitai.com/2019/12/9998.html)
+
+[17篇论文，详解图的机器学习趋势 | NeurIPS 2019(TODO)](https://www.leiphone.com/news/201912/GsRSElsUReef0z7o.html)
+
+[Reddit 票选：2019 年绝对不能错过的机器学习论文](https://blog.csdn.net/HyperAI/article/details/103966398)
+
+[AdaBound (TODO)](https://github.com/Luolc/AdaBound)
+
+[PRML (TODO)](https://github.com/ctgk/PRML)
+
+[2020必读的12本机器学习书籍](https://zhuanlan.zhihu.com/p/149546415)
 
 # 强化学习
 
@@ -90,3 +104,9 @@ https://www.cnblogs.com/wuyuegb2312/p/3281264.html(yes)
 https://blog.csdn.net/qq_40907279/article/details/78708856
 http://acm.hdu.edu.cn/showproblem.php?pid=2050
 https://blog.csdn.net/eagle_or_snail/article/details/50987044(yes)
+
+
+# 推荐系统
+
+[KDD 推荐领域的顶级会议](https://www.kdd.org)
+
