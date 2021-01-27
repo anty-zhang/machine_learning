@@ -11,8 +11,43 @@
 
 人工智能(AI): 一个广泛的概念，本质是用数据和模型去为现有的问题(existing problems)提供解决方法(solutions)。人工智能是一个与机器学习和数据挖掘相对不同的概念，人工智能的目的是为了去创造有智力的电脑(不知道怎么翻译好，可以假设其为机器人)。在实践中，我们希望这个电脑可以像有智力的人一样处理一个任务。因此，理论上人工智能几乎包括了所有和机器能做的内容，当然也包括了数据挖掘和机器学习的内容，同时还会有监视(monitor)和控制进程(process control)的内容。关键字：和人一样处理问题，技术的合集
 
-
 模式识别: 重在认识事物。
+
+# 关键技术
+
+- Embedding
+
+- Attention
+
+- Adversarial
+
+- Reinforcement
+
+- Convolutional
+
+- Recurrent
+
+# 研究任务
+
+- Classification
+
+- Regression
+
+- Prediction
+
+- Recognition
+
+- Tracking
+
+- Segmentation
+
+- Translation
+
+- Recommendation
+
+# 指标多样性
+
+Efficient(59)，Robust(30)，Dynamic(29)，Adaptive(29)，Hierarchical(26)
 
 
 # 竞赛
