@@ -349,3 +349,7 @@ embedding layer:  ['dnn/hiddenlayer_0/bias', 'dnn/hiddenlayer_0/bias/t_0/Adagrad
 [深度学习中的embedding](https://blog.csdn.net/qq_35799003/article/details/84780289)
 
 [intro_to_sparse_data_and_embeddings.ipynb](https://colab.research.google.com/notebooks/mlcc/intro_to_sparse_data_and_embeddings.ipynb?utm_source=mlcc&utm_campaign=colab-external&utm_medium=referral&utm_content=embeddings-colab&hl=en#scrollTo=HYKKpGLqLS8d)
+
+[词向量模型word2vector详解](https://www.cnblogs.com/stephen-goodboy/articles/12574738.html)
+
+[word2vector 理解入门](https://www.cnblogs.com/Allen-rg/p/9566980.html)
