@@ -53,3 +53,5 @@ Efficient(59)，Robust(30)，Dynamic(29)，Adaptive(29)，Hierarchical(26)
 # 竞赛
 
 [阿里云-天池大赛](https://tianchi.aliyun.com/competition/gameList/algorithmList)
+
+[数学公式](https://blog.csdn.net/dss_dssssd/article/details/82692894)
