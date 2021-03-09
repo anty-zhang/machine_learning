@@ -124,6 +124,24 @@ https://blog.csdn.net/Jemila/article/details/77992967(正负样本不均衡的�
 
 [Correlation](https://www.mathsisfun.com/data/correlation.html)
 
+https://blog.csdn.net/wydbyxr/article/details/80747103
+
+https://www.cnblogs.com/lijingblog/p/11043513.html
+
+https://www.zhihu.com/question/55420602/answer/394577531
+
+https://www.imooc.com/article/37741
+
+https://www.tqwba.com/x_d/jishu/73472.html
+
+https://www.163.com/dy/article/FL1ULP2V0519EA27.html
+
+http://study.zhizuobiao.com/study-18112800128/
+
+https://cloud.tencent.com/developer/article/1562114
+
+
+
 
 #### 计算每一个特征与响应变量的相关性
 
