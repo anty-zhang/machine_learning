@@ -124,9 +124,6 @@ https://blog.csdn.net/Jemila/article/details/77992967(正负样本不均衡的�
 
 [Correlation](https://www.mathsisfun.com/data/correlation.html)
 
-[用可视化思维解读统计自由度](https://www.jianshu.com/p/0032087b9dbb)
-
-[结合日常生活的例子，了解什么是卡方检验](https://www.jianshu.com/p/807b2c2bfd9b)
 
 #### 计算每一个特征与响应变量的相关性
 
