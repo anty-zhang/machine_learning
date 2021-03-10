@@ -118,68 +118,6 @@ https://blog.csdn.net/Jemila/article/details/77992967(正负样本不均衡的�
 
 ### 特征选择的工程化方法
 
-[线性相关系数、卡方检验、互信息](https://blog.csdn.net/gdanskamir/article/details/54913233)
-
-[关于相关系数的一些理解误区](https://blog.csdn.net/witforeveryang/article/details/42585791)
-
-[Correlation](https://www.mathsisfun.com/data/correlation.html)
-
-https://blog.csdn.net/wydbyxr/article/details/80747103
-
-https://www.cnblogs.com/lijingblog/p/11043513.html
-
-https://www.zhihu.com/question/55420602/answer/394577531
-
-https://www.imooc.com/article/37741
-
-https://www.tqwba.com/x_d/jishu/73472.html
-
-https://www.163.com/dy/article/FL1ULP2V0519EA27.html
-
-http://study.zhizuobiao.com/study-18112800128/
-
-https://cloud.tencent.com/developer/article/1562114
-
-
-
-
-#### 计算每一个特征与响应变量的相关性
-
-##### 线性相关系数
-
-> 线性相关系数前提是必须建立在因变量和自变量是线性关系的基础上，否则线性相关系数是没有意义的。例如：非线性相关也会导致相关系数较大；离群点也会导致相关系数较大
-
-> 只有当两个变量的标准差都不为0时，相关系数才有意义
-
-> 相关系数等于0，只能说明两个变量不是线性关系，但不能说明两个变量之间没有关系，比如非线性关系。
-
-> 从公式中可以看出，如果只有一个数据，分母为0，线性相关系数也是没有意义的
-
-> 少量数据，计算相关性也是无意的(无法画出那条直线)
-
-> 在给出相关系数之前，画图展示下数据的分布
-
-##### 卡方检验(chi-square test)
-
-> 用来检测两个变量或样本的独立性。卡方检验的理论假设是：观测频数和实际频数没有区别，除非两个变量不是独立的。例如：XX公司不同部门职员的性别和部门两者是独立的嘛？很明显不是，部门1期望男女比例是1.05:1，IT 研发部门可能是3:1， HR, 客户等部门可能是1:3了
-
-> 没有线性的前提假设，但卡法检验需要查询卡方临界表，但是比较相关性大小就不用了 
-
-> 对于连续性的特征，需要离散化在计算卡方分布
-
-> 计算卡方的步骤： （1）计算卡方统计值   （2）计算自由度	（3）确定置信水平
-
-##### 互信息
-
-> 互信息是变量间相互依赖性的度量，简单来讲，是指一个随机变量包含另外一个随机变量的信息量，或者说如果已知一个变量，另外一个变量较少的信息量
-
-> 当且仅当X和Y为独立随机变量时，互信息值为0
-
-> 互信息是对偶的
-
-> 互信息是非负的
-
-> 连续性的特征也需要离散化处理
 
 #### 构建单个特征模型，通过模型的准确性为特征排序，借此选择特征
 
