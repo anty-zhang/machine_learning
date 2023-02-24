@@ -33,7 +33,7 @@ $\frac{\partial L(y, a)} {\partial z_i} = \sum_j ( \frac {\partial L(y, a)} {\pa
 
 这里为什么是$a_j$而不是$a_i$，这里要看一下softmax的公式了，因为softmax公式的特性，它的分母包含了所有神经元的输出，所以，对于不等于i的其他输出里面，也包含着$z_i$，所有的a都要纳入到计算范围中，并且后面的计算可以看到需要分为 $i=j$ 和 $i \neq j$两种情况求导
 
-$\frac {\partial L(y_j, a_j)} {\partial L(a_j)} = \frac {\partial (- y_j log(a_j))} {\partial a_j} = - \frac {y_j} {a_j}$
+$$\frac {\partial L(y_j, a_j)} {\partial L(a_j)} = \frac {\partial (- y_j log(a_j))} {\partial a_j} = - \frac {y_j} {a_j}$$
 
 - 当 $i = j$
 
@@ -128,11 +128,27 @@ def softmax_loss_vectorized(W, X, y, reg):
 	dW = dW / num_train + reg * W  
 
 	return loss, dW
-
 ```
 
+# 多分类 softmax梯度求解推到
 
-## reference
+TODO
+
+# softmax 和SVM
+
+TODO
+
+
+# LR多分类和softmax多分类
+
+- 若分类的的类别互斥，则用softmax方法
+
+- 若分类的类别存存在交叉，则用多分类LR，再通过投票决定
+
+
+# reference
+
+[机器学习算法：LR多分类与softmax分类](https://www.jianshu.com/p/8b8cecf8836a)
 
 [三分钟带你对 Softmax 划重点](https://blog.csdn.net/red_stone1/article/details/80687921)
 

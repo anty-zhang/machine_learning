@@ -70,4 +70,4 @@ L(y,\widehat y) =  - \log (\sigma (y\widehat y))\\
 
 [Deep Learning基础--各个损失函数的总结与比较](https://www.cnblogs.com/shixiangwan/p/7953591.html)
 
-[机器学习之常见的损失函数(loss function)](https://msd.misuland.com/pd/2884250137616455476)
+[常见的损失函数(loss function)总结](https://zhuanlan.zhihu.com/p/58883095)
