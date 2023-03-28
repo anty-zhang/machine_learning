@@ -13,6 +13,18 @@
 
 # 机器学习
 
+[动手学深度学习 PyTorch版(李沐)](https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497)
+
+[动手学深度学习 课件(李沐)](https://c.d2l.ai/stanford-cs329p/)
+
+[斯坦福2021秋：实用机器学习(李沐)](https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358496)
+
+[斯坦福2021秋：实用机器学习课件(李沐)](https://c.d2l.ai/stanford-cs329p/)
+
+[李宏毅2021/2022春机器学习课程](https://www.bilibili.com/video/BV1Wv411h7kN/?from=search&seid=8443714484591083410&spm_id_from=333.337.0.0&vd_source=e3a659e3f3d726e4c530407414914b31)
+
+[吴恩达机器学习经典名课](https://www.bilibili.com/video/BV164411S78V/?p=2&spm_id_from=pageDriver&vd_source=e3a659e3f3d726e4c530407414914b31)
+
 [機器學習基石上 (Machine Learning Foundations)---Mathematical Foundations](https://www.coursera.org/learn/ntumlone-mathematicalfoundations?source=deprecated_spark_cdp)
 
 [機器學習基石下 (Machine Learning Foundations)---Algorithmic Foundations](https://www.coursera.org/learn/ntumlone-algorithmicfoundations?source=deprecated_spark_cdp)
