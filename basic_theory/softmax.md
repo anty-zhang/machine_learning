@@ -2,6 +2,8 @@
 
 ## softmax 函数
 
+hardmax 最大特点是只能选择其中一个最大值，即非黑即白。这种在现实中是不合情理的。实际中我们更期望得到每个类别的概率值(置信度)。所以此时用到了soft，Softmax的含义就在于不再唯一的确定某一个最大值，而是为每个输出分类的结果都赋予一个概率值，表示属于每个类别的可能性。
+
 softmax(柔性最大值)函数，一般在神经网络中， softmax可以作为分类任务的输出层。其实可以认为softmax输出的是几个类别选择的概率，比如我有一个分类任务，要分为三个类，softmax函数可以根据它们相对的大小，输出三个类别选取的概率，并且概率和为1。
 
 ![一个神经元图片](./img/softmax/nn_example_1.png)
@@ -16,6 +18,20 @@ $z_i=\sum_{j} w_{ij} x_{ij} + b$
 $a_i=\frac{e^{z_i}}{\sum_k e^{z_k}}$
 
 $a_i$代表softmax的第i个输出值，右侧就是套用了softmax函数。
+
+- 引入指数函数的优点
+
+指数函数曲线呈现递增趋势，最重要的是斜率逐渐增大，也就是说在x轴上一个很小的变化，可以导致y轴上很大的变化。这种函数曲线能够将输出的数值拉开距离。
+
+- 引入指数函数的缺点
+
+指数函数的曲线斜率逐渐增大虽然能够将输出值拉开距离，但是也带来了缺点，当 $z_i$ 值非常大的话，计算得到的数值也会变的非常大，数值可能会溢出。
+
+解决方法:
+
+$D = max(z)$
+
+$softmax(z_i) = \frac{e^{z_i -D}} {\sum_{c=1}^C e^{z_c - D}}$
 
 
 ## softmax 损失函数
@@ -37,7 +53,7 @@ $$\frac {\partial L(y_j, a_j)} {\partial L(a_j)} = \frac {\partial (- y_j log(a_
 
 - 当 $i = j$
 
-$\frac {\partial a_j} {\partial z_i} = \frac {\partial(\frac {e^{z_j}} {\sum_k e^{z_k}})} {\partial z_i}= \frac {\sum_k e^{z_k} e^{z_j} - (e^{z_j})^2} {(\sum_k e^{z_k})^2} = (\frac {e^{z_j}} {\sum_k e^{z_k}}) (1 - \frac {e^{z_j}} {\sum_k e^{z_k}})=a_j(1 - a_j) = a_i(a-a_i)$
+$\frac {\partial a_j} {\partial z_i} = \frac {\partial(\frac {e^{z_j}} {\sum_k e^{z_k}})} {\partial z_i}= \frac {\sum_k e^{z_k} e^{z_j} - (e^{z_j})^2} {(\sum_k e^{z_k})^2} = (\frac {e^{z_j}} {\sum_k e^{z_k}}) (1 - \frac {e^{z_j}} {\sum_k e^{z_k}})=a_j(1 - a_j) = a_i(1-a_i)$
 
 - 当 $i \neq j$
 
@@ -130,7 +146,7 @@ def softmax_loss_vectorized(W, X, y, reg):
 	return loss, dW
 ```
 
-# 多分类 softmax梯度求解推到
+# 多分类 softmax梯度求解推导
 
 TODO
 
@@ -147,6 +163,8 @@ TODO
 
 
 # reference
+
+[一文详解Softmax函数](https://zhuanlan.zhihu.com/p/105722023)
 
 [机器学习算法：LR多分类与softmax分类](https://www.jianshu.com/p/8b8cecf8836a)
 
