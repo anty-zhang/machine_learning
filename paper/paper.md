@@ -89,6 +89,50 @@ CVIU: Computer Vision and Image UnderstandingPattern Recognition
 
 [IJCAI(International Joint Conference on Artificial Intelligence)](https://www.ijcai.org/)
 
+# 论文工具
+
+- pagewithcode：人工智能最前沿论文，有代码
+
+https://paperswithcode.com/
+
+- Aminer：计算机最新会议，显示哪些论文引用的最多
+
+https://mrt.aminer.cn/
+
+- arxiv：可以证明论文的原创性
+
+- The NLP Index：当今NLP中最重要的一些主题
+
+https://index.quantumstat.com/
+
+- Connectedpaper：论文引用可视化工具
+
+https://www.connectedpapers.com/
+
+- IEEE Xplore：顶尖的会议和期刊杂志（国外最前沿）
+
+https://ieeexplore.ieee.org/Xplore/home.jsp
+
+- DeepL：翻译软件
+
+https://www.deepl.com/translator
+
+- overleaf：编辑工具
+
+https://www.overleaf.com/project
+
+- diagrams：绘图工具
+
+https://app.diagrams.net/
+
+- zotero：文献管理和阅读工具
+
+https://www.zotero.org/
+
+- Quillbot提炼工具
+
+- Grammarly进行语法纠错
+
 # reference
 
 [NLP领域国内外知名会议和期刊](https://blog.csdn.net/weixin_34613450/article/details/86679630)
@@ -100,3 +144,5 @@ CVIU: Computer Vision and Image UnderstandingPattern Recognition
 [推荐系统相关顶会整理](https://zhuanlan.zhihu.com/p/520982759)
 
 [MaxTEX](http://tug.org/cgi-bin/mactex-download/MacTeX.pkg)
+
+[论文常用工具](https://www.jiqizhixin.com/articles/2018-11-14-4)
