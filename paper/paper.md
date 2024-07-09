@@ -131,6 +131,8 @@ https://app.diagrams.net/
 
 https://www.zotero.org/
 
+https://app.txyz.ai
+
 - Quillbot提炼工具
 
 - Grammarly进行语法纠错
