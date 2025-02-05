@@ -7,19 +7,19 @@
 
 - A 类
 
-[<font color=red>CVPR: International Conference on Computer Vision and Pattern Recognition </font>](https://openaccess.thecvf.com/menu)
+[<font color=red>CVPR: International Conference on Computer Vision and Pattern Recognition </font>](https://openaccess.thecvf.com/menu) 【CVPR是计算机视觉和模式识别领域的领先会议，提供技术报告、研讨会和教程】
 
-[<font color=red> ICCV: International Conference on Computer Vision </font>](https://openaccess.thecvf.com/menu)
+[<font color=red> ICCV: International Conference on Computer Vision </font>](https://openaccess.thecvf.com/menu) 【ICCV是计算机视觉领域最负盛名的会议之一，吸引了全球顶尖的研究人员，重点关注计算机视觉技术的最新进展】
 
 ACM MM: ACM International Conference on Multimedia
 
 - B类
 
-[<font color=red> ECCV: European Conference on Computer Vision</font>](https://openaccess.thecvf.com/menu)
+[<font color=red> ECCV: European Conference on Computer Vision</font>](https://openaccess.thecvf.com/menu) 【ECCV以其严格的同行评审和对计算机视觉理论进展的深入讨论而闻名】
 
 - C类
 
-ACCV: Asian Conference on Computer 
+ACCV: Asian Conference on Computer 【ACCV为亚洲研究人员提供了一个分享计算机视觉技术最新进展的平台】 
 
 VisionICPR: International Conference on Pattern Recognition
 
@@ -31,10 +31,11 @@ BMVC: British Machine Vision Conference
 - A类
 
 TPAMI: IEEE Trans on Pattern Analysis and Machine Intelligence
+【TPAMI是计算机视觉和模式分析领域的权威期刊，发表高质量的原创研究】
 
-IJCV: International Journal of Computer Vision
+IJCV: International Journal of Computer Vision【IJCV专注于计算机视觉的理论和实践，是该领域的核心期刊】
 
-TIP: IEEE Transactions on Image Processing
+TIP: IEEE Transactions on Image Processing 【该期刊涵盖图像处理的各个方面，是图像处理领域的顶级期刊】
 
 - B类
 
@@ -61,13 +62,13 @@ CVIU: Computer Vision and Image UnderstandingPattern Recognition
 
 - A类
 
-[ICML(International Conference on Machine Learning)](https://icml.cc/)
+[ICML(International Conference on Machine Learning)](https://icml.cc/) 【ICML是机器学习领域的顶级会议之一，每年举办一次，涵盖广泛的机器学习主题。会议内容包括监督学习、无监督学习、深度学习、强化学习等，是展示机器学习最新进展的重要平台。】
 
-[NIPS(Annual Conference on Neural Information Processing Systems)](https://nips.cc/)
+[NIPS(Annual Conference on Neural Information Processing Systems)](https://nips.cc/) 【NeurIPS是机器学习和计算神经科学领域的顶级会议，每年12月举行，由NIPS基金会主办。涵盖深度学习、强化学习、神经科学等多个领域，会议论文质量高，影响力大。】
 
 - 未知
 
-[ICLR](https://iclr.cc/)
+[ICLR](https://iclr.cc/) 【ICLR是深度学习领域的新兴顶级会议，专注于表示学习和深度学习。会议影响力大，是深度学习领域的“无冕之王”，会议论文质量高。】
 
 # 数据挖掘
 
@@ -85,9 +86,9 @@ CVIU: Computer Vision and Image UnderstandingPattern Recognition
 
 - A类
 
-[AAAI(AAAI Conference on Artificial Intelligence)](https://aaai.org/)
+[AAAI(AAAI Conference on Artificial Intelligence)](https://aaai.org/) 【AAAI是人工智能领域的顶级会议之一，涵盖机器学习、计算机视觉、自然语言处理等多个领域。会议规模大，投稿量高，是展示人工智能最新科研成果的核心舞台。】
 
-[IJCAI(International Joint Conference on Artificial Intelligence)](https://www.ijcai.org/)
+[IJCAI(International Joint Conference on Artificial Intelligence)](https://www.ijcai.org/) 【：IJCAI是人工智能领域的重要会议，原为单数年召开，自2016年起改为每年召开。会议内容广泛，涵盖机器学习、机器人技术、自然语言处理等。】
 
 # 论文工具
 
