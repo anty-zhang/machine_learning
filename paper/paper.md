@@ -138,6 +138,14 @@ https://app.txyz.ai
 
 - Grammarly进行语法纠错
 
+
+- [ML-Papers-of-the-Week 每周精选论文](https://github.com/dair-ai/ML-Papers-of-the-Week/tree/main#top-ml-papers-of-the-week-january-20---january-26---2025)
+
+- [arxiv-daily-en 每12小时从arXiv抓取最新论文](https://dailyarxiv.com/)
+
+- [arxiv-daily-cn 每12小时从arXiv抓取最新论文](https://www.arxivdaily.com/cate/20/seq/0)
+
+
 # reference
 
 [NLP领域国内外知名会议和期刊](https://blog.csdn.net/weixin_34613450/article/details/86679630)
