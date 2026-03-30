@@ -63,5 +63,3 @@ MIT OpenCourseWare
 Coursera 和 edX : 提供由顶尖大学和公司开设的AI相关课程，例如吴恩达（Andrew Ng）的《Machine Learning》。
 YouTube Live Lectures : 许多大学和研究机构会直播AI领域的讲座，例如斯坦福大学的CS229课程。
 
-
-

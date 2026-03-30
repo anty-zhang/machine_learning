@@ -159,3 +159,9 @@ https://app.txyz.ai
 [MaxTEX](http://tug.org/cgi-bin/mactex-download/MacTeX.pkg)
 
 [论文常用工具](https://www.jiqizhixin.com/articles/2018-11-14-4)
+
+[huggingface 精选论文](https://huggingface.co/blog?tag=diffusion)
+
+[每周论文精选](https://github.com/dair-ai/ML-Papers-of-the-Week/tree/main#top-ml-papers-of-the-week-january-27---february-2---2025)
+
+[推荐系统相关会议](https://www.yuque.com/aspectre/st40w2/grqk86?)
